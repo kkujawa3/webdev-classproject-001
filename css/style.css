@@ -58,7 +58,7 @@ hr {
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
-	max-width: 600px;
+	max-width: 900px;
 	border: 2px solid rgb(215, 223, 215);
 	justify-content: center;
 	align-items: center;
@@ -106,12 +106,11 @@ q::before, q::after {
 .quote::after {
    top: 2em;
    font-size: 6em;
-   margin: 0 0.5em;
 }  
 
-.cite {
+cite {
 	margin-top: 20px;
-	padding: 20px 20px;
+	font-size: 16px;
 }
 
 /* Media Queries */
@@ -121,18 +120,8 @@ q::before, q::after {
 	/* CSS HERE */
     .container {
 		display: flex;
-		flex-direction: column;
-		max-width: 699px;
+		flex-direction: row;
 	}
-
-	.quote {
-		padding: 10px;
-    }
-
-	.cite {
-		padding: 10px;
-	}
-
 }
 
 /* Desktop Media Query */
@@ -142,6 +131,5 @@ q::before, q::after {
     .container {
      display: flex;
      flex-direction: row;
-	 max-width: 999px;
     }
 }
